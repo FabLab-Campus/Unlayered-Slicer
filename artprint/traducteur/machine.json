@@ -1,0 +1,21 @@
+{
+  "_comment": "Réglages de la machine ArtPrint pour le traducteur. Un moteur par axe (choix du 12/10/2026). a5/d6/b_home = valeurs Unlayered en attendant les mesures d'ArtPrint. b_ratio/c_ratio ne servent qu'en corexbyc.",
+  "kinematics": "cartesian",
+  "a5": 2.5,
+  "d6": 46.4,
+  "b_skew": 0.0,
+  "b_home": -90.0,
+  "zero_offset_at_home": true,
+  "b_ratio": 3.0,
+  "c_ratio": 5.5,
+  "output_axes": [
+    "X",
+    "Y",
+    "Z",
+    "B",
+    "C"
+  ],
+  "max_segment_deg": 1.0,
+  "max_segment_mm": 1.0,
+  "max_feed": 30000.0
+}
