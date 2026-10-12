@@ -42,12 +42,12 @@ Le slicer appelle alors le traducteur à chaque export de G-code.
 
 | Réglage | Signification | Valeur Unlayered |
 |---|---|---|
-| `kinematics` | `corexbyc` = paires de moteurs comme Unlayered ; `cartesian` = un moteur par axe | `corexbyc` |
+| `kinematics` | `cartesian` = un moteur par axe (**choix d'ArtPrint**) ; `corexbyc` = paires de moteurs comme Unlayered | `corexbyc` |
 | `d6` | distance pivot de la tête → pointe de la buse (mm) | 46,4 |
 | `a5` | petit décalage de côté entre le pivot et la buse (mm) | 2,5 |
 | `b_home` | angle B quand la buse est verticale | −90 |
 | `b_ratio`, `c_ratio` | réduction des axes B et C | 3 et 5,5 |
-| `output_axes` | noms des axes écrits dans le G-code | X Y Z U V |
+| `output_axes` | noms des axes écrits dans le G-code (ArtPrint : X Y Z B C) | X Y Z U V |
 | `max_segment_deg` | rotation maximale par petit morceau (°) | 1 |
 
 ## Tester
@@ -60,4 +60,4 @@ Un des tests compare le traducteur au calcul exact du firmware Unlayered (`FiveA
 - Remplir `machine.json` avec les mesures d'ArtPrint.
 - Choisir la carte et compléter `klipper/artprint-axes.cfg` (broches, pas, limites).
 - Écrire le profil d'imprimante ArtPrint dans le slicer (G-code de début et de fin pour Klipper).
-- **Prise d'origine** : avec des paires de moteurs, un seul moteur ne correspond pas à un seul axe. Il faudra une macro de prise d'origine adaptée. Avec `cartesian` (un moteur par axe), c'est beaucoup plus simple.
+- **Prise d'origine** des axes B et C (inclinaison et rotation).
