@@ -1,0 +1,15 @@
+{
+  "_comment": "Réglages de la machine ArtPrint pour le traducteur. Valeurs de départ = celles de la machine Unlayered (firmware, M669 K16). À remplacer par les mesures d'ArtPrint.",
+  "kinematics": "corexbyc",
+  "a5": 2.5,
+  "d6": 46.4,
+  "b_skew": 0.0,
+  "b_home": -90.0,
+  "zero_offset_at_home": true,
+  "b_ratio": 3.0,
+  "c_ratio": 5.5,
+  "output_axes": ["X", "Y", "Z", "U", "V"],
+  "max_segment_deg": 1.0,
+  "max_segment_mm": 1.0,
+  "max_feed": 30000.0
+}
